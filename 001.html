@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+      <title>ReceitaReact - 1</title>      
+
+   </head>
+
+   <body>
+
+      <div id="app"></div>
+
+      <script src="libs/react.js"></script>
+
+      <script src="libs/react-dom.js"></script>
+
+      <script src="libs/babel.js" charset = "utf-8"></script>
+
+            
+
+      <script type="text/babel">
+
+            
+
+      const Cabecalho =() =>{
+         return(
+            <h1> Minha Tabela de Produtos</h1>
+         )
+      } 
+
+      const TabelaProd = () => {
+
+         return(
+            <div>
+               <table id="tabela" border="1" >
+                  <thead>
+                     <Cabecalho/>
+                     <tr><th>Nome</th><th>Marca</th><th>Tipo</th></tr>
+                  </thead>
+                  <tbody>
+                     <tr><td>Caribe</td><td>Garoto</td><td>Chocolate</td></tr>
+                  </tbody>
+
+               </table>
+            </div>
+         )
+      }
+
+      ReactDOM.render(
+         <TabelaProd/>
+         ,
+         document.getElementById("app"))
+      </script>
+
+   </body>
+
+</html>
